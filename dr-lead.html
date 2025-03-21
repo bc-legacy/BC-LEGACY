@@ -9,6 +9,41 @@
 </head>
 <body>
     <h1>Halaman DR Lead</h1>
-    <button onclick="kirimData()">Kirim</button>
+
+    <!-- Container untuk dua kolom -->
+    <div class="container">
+        <!-- Kolom beku (tidak bisa digeser ke samping) -->
+        <div class="kolom-beku">
+            <p>Data Tetap</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <!-- Kolom isian (tabel) -->
+        <div class="kolom-tabel">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" placeholder="Masukkan nama"></td>
+                            <td><input type="text" placeholder="Masukkan produk"></td>
+                            <td><input type="number" placeholder="Masukkan jumlah"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button onclick="kirimData()">Kirim</button>
+        </div>
+    </div>
 </body>
 </html>

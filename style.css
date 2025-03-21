@@ -1,28 +1,25 @@
-/* Tampilan khusus HP (max-width: 600px) */
-@media only screen and (max-width: 600px) {
-    body {
-        padding: 20px;
-        background: linear-gradient(to bottom, #ffffff, #ff8c00); /* Warna beda di HP */
-    }
+/* Ubah menu navigasi jadi vertikal */
+nav ul {
+    display: block;
+    text-align: left;
+    padding: 0;
+}
 
-    h1 {
-        font-size: 20px;
-        color: #222;
-    }
+nav ul li {
+    display: block;
+    margin: 10px 0;
+}
 
-    nav ul {
-        display: block;
-        text-align: center;
-    }
+nav ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 15px;
-        font-size: 18px;
-    }
+nav ul li a:hover {
+    background-color: #005bb5;
 }

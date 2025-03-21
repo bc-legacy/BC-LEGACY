@@ -1,7 +1,7 @@
 /* Ubah menu navigasi jadi vertikal */
 nav ul {
     display: block;
-    text-align: left;
+    text-align: middle;
     padding: 0;
 }
 

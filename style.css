@@ -1,7 +1,12 @@
-/* Ubah menu navigasi jadi vertikal */
+/* Pastikan teks di menu ada di kiri */
+nav {
+    text-align: middle; /* Mengatur posisi menu ke kiri */
+    padding-left: 20px; /* Memberi sedikit jarak dari kiri */
+}
+
+/* Pastikan menu tetap vertikal */
 nav ul {
     display: block;
-    text-align: middle;
     padding: 0;
 }
 
@@ -18,6 +23,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    text-align: left; /* Pastikan teks dalam menu ada di kiri */
 }
 
 nav ul li a:hover {

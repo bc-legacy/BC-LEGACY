@@ -1,36 +1,28 @@
-/* Mengatur background halaman */
-body {
-    background: linear-gradient(to bottom, #ffffff, #4a90e2);
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-}
+/* Tampilan khusus HP (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+        background: linear-gradient(to bottom, #ffffff, #ff8c00); /* Warna beda di HP */
+    }
 
-/* Styling judul */
-h1 {
-    color: #333;
-}
+    h1 {
+        font-size: 20px;
+        color: #222;
+    }
 
-/* Styling menu navigasi */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+    nav ul {
+        display: block;
+        text-align: center;
+    }
 
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    background-color: #0073e6;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    background-color: #005bb5;
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        font-size: 18px;
+    }
 }

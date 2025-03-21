@@ -1,6 +1,6 @@
-/* Mengatur background halaman jadi putih */
+/* Mengatur background halaman jadi biru */
 body {
-    background: white;
+    background: linear-gradient(to bottom, #ffffff, #4a90e2); /* Gradasi putih ke biru */
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;

@@ -1,46 +1,78 @@
+/* Reset CSS */
 body {
-    background-color: #005bb5; /* Warna biru */
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #005bb5;
+    color: white;
+}
+
+/* Container untuk dua kolom */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Kolom beku (tidak bisa geser kanan-kiri) */
+.kolom-beku {
+    width: 30%;
+    min-width: 150px;
+    background: white;
+    color: black;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Kolom tabel */
+.kolom-tabel {
+    flex-grow: 1;
+}
+
+/* Agar tabel bisa discroll jika terlalu lebar */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Styling tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
+}
+
+th {
+    background-color: #003f7f;
     color: white;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: block;
-    margin: 10px 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    background-color: #0073e6;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: block;
-    width: 200px;
-    margin: auto;
-}
-
-nav ul li a:hover {
-    background-color: #004494;
-}
-
+/* Tombol */
 button {
-    background-color: white;
-    color: #005bb5;
-    padding: 10px 20px;
+    margin-top: 10px;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background: yellow;
+    color: black;
     font-size: 16px;
+    cursor: pointer;
+    width: 100%;
 }
 
-button:hover {
-    background-color: lightgray;
+/* Pastikan tabel tidak terpotong di HP */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .kolom-beku {
+        width: 100%;
+        min-width: unset;
+    }
 }

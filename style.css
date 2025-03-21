@@ -7,32 +7,32 @@ body {
     color: white;
 }
 
-/* Container utama untuk dua kolom */
+/* Container utama (2 kolom) */
 .container {
     display: flex;
-    flex-direction: row; /* Tetap berdampingan di semua layar */
+    flex-direction: row; /* Tetap sejajar di semua layar */
     align-items: flex-start;
     gap: 10px;
     width: 100%;
 }
 
-/* Kolom beku (tidak bisa geser kanan-kiri) */
+/* Kolom beku */
 .kolom-beku {
     width: 30%;
-    min-width: 150px;
+    min-width: 120px;
     background: white;
     color: black;
     padding: 10px;
     overflow-y: auto;
-    height: 300px; /* Sesuaikan agar tetap terlihat */
+    height: 250px;
     position: sticky;
-    top: 0; /* Tetap di tempat saat scroll */
+    top: 0;
 }
 
 /* Kolom tabel */
 .kolom-tabel {
     flex-grow: 1;
-    width: 70%;
+    width: 60%;
 }
 
 /* Agar tabel bisa di-scroll jika terlalu lebar */
@@ -51,7 +51,7 @@ table {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 6px;
     text-align: center;
 }
 
@@ -60,30 +60,39 @@ th {
     color: white;
 }
 
+/* Input hanya untuk angka 1-100 */
+input[type="number"] {
+    width: 60px; /* Diperkecil */
+    text-align: center;
+}
+
 /* Tombol */
 button {
     margin-top: 10px;
-    padding: 10px;
+    padding: 8px;
     border: none;
     background: yellow;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     width: 100%;
 }
 
-/* ✅ Pastikan di HP tetap sejajar (bukan bertumpuk) */
+/* ✅ Responsif untuk HP */
 @media (max-width: 600px) {
     .container {
-        flex-direction: row; /* Tetap bersandingan */
-        flex-wrap: wrap;
+        flex-wrap: nowrap; /* Tidak bertumpuk */
     }
 
     .kolom-beku {
-        width: 40%; /* Lebih kecil di HP agar tetap sejajar */
+        width: 35%; /* Lebih kecil */
     }
 
     .kolom-tabel {
-        width: 60%; /* Lebih besar di HP */
+        width: 55%; /* Tidak terlalu besar */
+    }
+
+    input[type="number"] {
+        width: 50px; /* Diperkecil di HP */
     }
 }

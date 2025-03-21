@@ -1,12 +1,25 @@
-/* Pastikan teks di menu ada di kiri */
-nav {
-    text-align: middle; /* Mengatur posisi menu ke kiri */
-    padding-left: 20px; /* Memberi sedikit jarak dari kiri */
+/* Mengatur background halaman jadi putih */
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
 }
 
-/* Pastikan menu tetap vertikal */
+/* Styling untuk judul */
+h1 {
+    color: #333;
+}
+
+/* Styling menu navigasi */
+nav {
+    text-align: left; /* Posisi menu di kiri */
+    padding-left: 20px; /* Jarak dari kiri */
+}
+
+/* Agar menu tampil vertikal */
 nav ul {
-    display: block;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -15,6 +28,7 @@ nav ul li {
     margin: 10px 0;
 }
 
+/* Styling tombol menu */
 nav ul li a {
     display: block;
     padding: 10px;
@@ -23,9 +37,10 @@ nav ul li a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    text-align: left; /* Pastikan teks dalam menu ada di kiri */
+    text-align: left; /* Teks tetap rata kiri */
 }
 
+/* Efek saat hover */
 nav ul li a:hover {
     background-color: #005bb5;
 }

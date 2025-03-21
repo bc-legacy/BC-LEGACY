@@ -1,0 +1,36 @@
+/* Mengatur background halaman */
+body {
+    background: linear-gradient(to bottom, #ffffff, #4a90e2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Styling judul */
+h1 {
+    color: #333;
+}
+
+/* Styling menu navigasi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #0073e6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+}

@@ -7,11 +7,13 @@ body {
     color: white;
 }
 
-/* Container untuk dua kolom */
+/* Container utama untuk dua kolom */
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Tetap berdampingan di semua layar */
+    align-items: flex-start;
     gap: 10px;
+    width: 100%;
 }
 
 /* Kolom beku (tidak bisa geser kanan-kiri) */
@@ -22,14 +24,18 @@ body {
     color: black;
     padding: 10px;
     overflow-y: auto;
+    height: 300px; /* Sesuaikan agar tetap terlihat */
+    position: sticky;
+    top: 0; /* Tetap di tempat saat scroll */
 }
 
 /* Kolom tabel */
 .kolom-tabel {
     flex-grow: 1;
+    width: 70%;
 }
 
-/* Agar tabel bisa discroll jika terlalu lebar */
+/* Agar tabel bisa di-scroll jika terlalu lebar */
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -66,13 +72,18 @@ button {
     width: 100%;
 }
 
-/* Pastikan tabel tidak terpotong di HP */
+/* ✅ Pastikan di HP tetap sejajar (bukan bertumpuk) */
 @media (max-width: 600px) {
     .container {
-        flex-direction: column;
+        flex-direction: row; /* Tetap bersandingan */
+        flex-wrap: wrap;
     }
+
     .kolom-beku {
-        width: 100%;
-        min-width: unset;
+        width: 40%; /* Lebih kecil di HP agar tetap sejajar */
+    }
+
+    .kolom-tabel {
+        width: 60%; /* Lebih besar di HP */
     }
 }

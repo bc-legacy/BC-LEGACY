@@ -13,7 +13,7 @@ h1 {
 
 /* Styling menu navigasi */
 nav {
-    text-align: middle; /* Posisi menu di kiri */
+    text-align: center; /* Posisi menu di kiri */
     padding-left: 20px; /* Jarak dari kiri */
 }
 
@@ -37,7 +37,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    text-align: middle; /* Teks tetap rata kiri */
+    text-align: center; /* Teks tetap rata kiri */
 }
 
 /* Efek saat hover */
